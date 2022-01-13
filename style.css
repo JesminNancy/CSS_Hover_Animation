@@ -33,6 +33,7 @@ a::before, a::after{
     display: block;
     background-color: rgb(240, 243, 34);
     transition: .5s;
+    transition-delay: 0.5s;
 }
 span::before, span::after{
     content: '';
@@ -40,45 +41,49 @@ span::before, span::after{
     display: block;
     background-color: rgb(240, 243, 34);
     transition: .5s;
+    transition-delay: 0s;
 }
 a::before{
     top: 0;
-    left: 50%;
+    left: 0;
     width: 0;
     height: 4px;
+    transition-delay: 1.5s;
 }
 a::after{
-    left: 50%;
+    right: 0;
     bottom: 0;
     width: 0;
     height: 4px;
+    transition-delay: 0.5s;
 }
 span::before{
-    top: 50%;
+    bottom: 0;
     left: 0;
     width: 4px;
     height: 0;
+    transition-delay: 0s;
 }
 span::after{
-    top: 50%;
     right: 0;
+    top: 0;
     width: 4px;
     height: 0;
+    transition-delay: 1.0s;
 }
 a:hover::before{
     width: 100%;
-    left: 0;   
+    transition-delay: 0s;
 }
 a:hover::after{
     width: 100%;
-    left: 0;   
+    transition-delay: 1.0s;
 }
 a:hover span::before{
     height: 100%;
-    top: 0;
-    
+    transition-delay: 1.5s;
 }
 a:hover span::after{
     height: 100%;
-    top: 0;
-    }
+    transition-delay: 0.5s;
+}
